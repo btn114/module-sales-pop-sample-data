@@ -125,10 +125,6 @@ class SalesPop
      * @var DirectoryList
      */
     private $directoryList;
-    /**
-     * @var \Magento\Shipping\Model\Config
-     */
-    private $shipconfig;
 
     /**
      * SalesPop constructor.
