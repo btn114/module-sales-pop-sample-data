@@ -34,17 +34,17 @@ class Installer implements Setup\SampleData\InstallerInterface
     /**
      * @var SalesPop
      */
-    private $abandonedCart;
+    private $salesPop;
 
     /**
      * Installer constructor.
      *
-     * @param SalesPop $abandonedCart
+     * @param SalesPop $salesPop
      */
     public function __construct(
-        SalesPop $abandonedCart
+        SalesPop $salesPop
     ) {
-        $this->abandonedCart = $abandonedCart;
+        $this->salesPop = $salesPop;
     }
 
     /**
@@ -53,6 +53,6 @@ class Installer implements Setup\SampleData\InstallerInterface
      */
     public function install()
     {
-        $this->abandonedCart->install(['Mageplaza_SalesPopSampleData::fixtures/mageplaza_sales_pop.csv']);
+        $this->salesPop->install(['Mageplaza_SalesPopSampleData::fixtures/mageplaza_sales_pop.csv']);
     }
 }
